@@ -5,16 +5,16 @@ class AwesomeModule: NSObject {
     func multiply(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
         resolve(a*b)
     }
-    @objc(multiply:withB:withResolver:withRejecter:)
+    @objc(sum:withB:withResolver:withRejecter:)
     func sum(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
         resolve(a+b)
     }
-    @objc(multiply:withB:withResolver:withRejecter:)
+    @objc(subtract:withB:withResolver:withRejecter:)
     func subtract(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
         resolve(a-b)
     }
-    @objc(multiply:withB:withResolver:withRejecter:)
-    func divide(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
+    @objc(divide:withB:withResolver:withRejecter:)
+    func divide(a: Int, b: Int, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
         resolve(a/b)
     }
 }
